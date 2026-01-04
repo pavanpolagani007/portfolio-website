@@ -150,3 +150,12 @@ h1{margin: 12px 0 10px; font-size: 44px; line-height:1.08}
   text-align:center;
   border-top: 1px solid var(--line);
 }
+
+.profile-photo{
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+}
