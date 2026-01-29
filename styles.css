@@ -159,3 +159,75 @@ h1{margin: 12px 0 10px; font-size: 44px; line-height:1.08}
   display: block;
   margin: 0 auto;
 }
+/* ---------- Animations (drop-in) ---------- */
+
+/* Smooth hover for cards + buttons */
+.card, .btn, .chip, .brand, .nav-links a {
+  transition: transform 220ms ease, box-shadow 220ms ease, opacity 220ms ease, border-color 220ms ease;
+}
+
+/* Card lift */
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 42px rgba(0,0,0,0.35);
+  border-color: rgba(255,255,255,0.18);
+}
+
+/* Buttons */
+.btn:hover{
+  transform: translateY(-2px);
+  opacity: 0.98;
+}
+.btn:active{
+  transform: translateY(0);
+}
+
+/* Chips */
+.chip:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.18);
+}
+
+/* Profile photo tiny hover */
+.profile-photo{
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+.profile-photo:hover{
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+}
+
+/* Reveal on scroll */
+.reveal{
+  opacity: 0;
+  transform: translateY(16px);
+  filter: blur(2px);
+  transition: opacity 650ms ease, transform 650ms ease, filter 650ms ease;
+  will-change: opacity, transform, filter;
+}
+.reveal.show{
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* Stagger utility (optional) */
+.delay-1{ transition-delay: 80ms; }
+.delay-2{ transition-delay: 160ms; }
+.delay-3{ transition-delay: 240ms; }
+.delay-4{ transition-delay: 320ms; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  .card, .btn, .chip, .brand, .nav-links a, .profile-photo{
+    transition: none !important;
+  }
+  .reveal{
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
+
