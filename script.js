@@ -1,4 +1,7 @@
-// Reveal elements on scroll
+// Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Reveal on scroll
 const items = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
