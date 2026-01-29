@@ -23,20 +23,20 @@
   <main id="top" class="container">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-left">
-        <p class="badge">New Grad • Software Engineer / SDET</p>
-        <h1>Pavan Polagani</h1>
-        <p class="subtitle">
+      <div class="hero-left reveal">
+        <p class="badge reveal delay-1">New Grad • Software Engineer / SDET</p>
+        <h1 class="reveal delay-2">Pavan Polagani</h1>
+        <p class="subtitle reveal delay-3">
           Master’s in Computer Information Systems • BTech in Computer Science<br/>
           Java • SQL • Data Structures • HTML/CSS
         </p>
 
-        <div class="hero-cta">
+        <div class="hero-cta reveal delay-4">
           <a class="btn" href="#projects">View Projects</a>
           <a class="btn ghost" href="mailto:pavanpolagani091@gmail.com">Email Me</a>
         </div>
 
-        <div class="links">
+        <div class="links reveal delay-4">
           <a href="https://www.linkedin.com/in/pavan-polagani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <span>•</span>
           <a href="https://github.com/YOUR_GITHUB_HERE" target="_blank" rel="noreferrer">GitHub</a>
@@ -45,8 +45,7 @@
         </div>
       </div>
 
-      <div class="hero-right">
-        <!-- Optional: add your photo at assets/profile.jpg -->
+      <div class="hero-right reveal delay-2">
         <div class="card photo-card">
           <img src="assets/profile.jpg" alt="Pavan Polagani" class="profile-photo" />
         </div>
@@ -54,7 +53,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <h2>About</h2>
       <p>
         I’m a Computer Science graduate with a Master’s in Computer Information Systems and a strong foundation in
@@ -68,9 +67,9 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="skills" class="section reveal">
       <h2>Skills</h2>
-      <div class="chips">
+      <div class="chips reveal delay-1">
         <span class="chip">Java</span>
         <span class="chip">SQL</span>
         <span class="chip">MySQL</span>
@@ -87,12 +86,11 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <h2>Projects</h2>
 
       <div class="grid">
-        <!-- Project 1 -->
-        <article class="card">
+        <article class="card reveal delay-1">
           <h3>Java + MySQL Student Management System</h3>
           <p class="muted">
             Layered Java application using JDBC + MySQL with full CRUD and a search feature.
@@ -108,8 +106,7 @@
           </div>
         </article>
 
-        <!-- Project 2 (placeholder) -->
-        <article class="card">
+        <article class="card reveal delay-2">
           <h3>SQL: Course Enrollment Database</h3>
           <p class="muted">
             Relational database design with normalized tables, relationships, and reporting queries
@@ -124,8 +121,7 @@
           </div>
         </article>
 
-        <!-- Project 3: this website -->
-        <article class="card">
+        <article class="card reveal delay-3">
           <h3>Personal Portfolio Website</h3>
           <p class="muted">
             Responsive portfolio website built with HTML and CSS and deployed using GitHub Pages.
@@ -143,37 +139,28 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
       <h2>Contact</h2>
       <p class="muted">Best way to reach me:</p>
-      <div class="contact-box card">
+
+      <div class="contact-box card reveal delay-1">
         <p><strong>Email:</strong>
-  <a href="mailto:pavanpolagani091@gmail.com">pavanpolagani091@gmail.com</a>
-</p>
+          <a href="mailto:pavanpolagani091@gmail.com">pavanpolagani091@gmail.com</a>
+        </p>
 
-<p><strong>LinkedIn:</strong>
-  <a href="https://www.linkedin.com/in/pavan-polagani/" target="_blank" rel="noreferrer">
-    linkedin.com/in/pavan-polagani
-  </a>
-</p>
-
-    
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/pavan-polagani/" target="_blank" rel="noreferrer">
+            linkedin.com/in/pavan-polagani
+          </a>
+        </p>
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer reveal">
       <p>© <span id="year"></span> Pavan Polagani • Built with HTML & CSS</p>
     </footer>
   </main>
 
-  <script>
-    // Tiny helper for footer year (optional)
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
